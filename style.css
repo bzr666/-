@@ -254,4 +254,33 @@ body {
   .xiaoxin-item img {
     object-fit: contain;
   }
+ 
+@media (max-width: 767px) {
+  body {
+    transform: rotate(90deg);
+    transform-origin: center center;
+    width: 100vh;
+    height: 100vw;
+    overflow: hidden;
+  }
+
+  .main-page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 100vh;
+  }
+
+  .xiaoxin-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .xiaoxin-family {
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .xiaoxin-item img {
+    object-fit: cover;
+  }
+}
 }
