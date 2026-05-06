@@ -205,14 +205,14 @@ body {
 
 
 @media (max-width: 767px) {
-  /* 手机端布局 */
+  /* 1. 整体布局改为上下 */
   .main-page {
     display: flex !important;
     flex-direction: column !important;
     min-height: auto !important;
   }
 
-  /* 导航置顶横向排列 */
+  /* 2. 导航移到顶部，横向自动换行 */
   .sidebar {
     display: flex !important;
     flex-direction: row !important;
@@ -229,22 +229,23 @@ body {
     margin: 0 !important;
   }
 
-  /* 内容区边距适配 */
+  /* 内容区边距适配手机 */
   .content {
     padding: 15px !important;
     min-height: auto !important;
   }
 
-  /* 小图网格改成2列 */
+  
   .xiaoxin-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
   }
 
-  /* 图片完整显示 + 盒子高度自适应 */
+  
   .xiaoxin-family {
     width: 100% !important;
     height: auto !important;
+    max-height: none !important;
     object-fit: contain !important;
     background-color: #ffffff !important;
     border-radius: 16px !important;
@@ -260,5 +261,4 @@ body {
     object-fit: contain !important;
     background-color: #ffffff !important;
   }
-
 }
