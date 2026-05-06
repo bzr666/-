@@ -239,20 +239,14 @@ body {
     gap: 15px !important;
   }
 
-  .xiaoxin-item {
-    height: auto !important; /* 强制解除固定高度 */
-    border-radius: 12px !important;
-    border: 3px solid #7fb069 !important;
-    overflow: hidden !important;
-    display: block !important;
-  }
+ .xiaoxin-item img {
+  width: 100% !important; 
+  height: auto !important; 
+  object-fit: contain !important; 
+  display: block !important; 
+  margin: 0 auto !important; 
+  background-color: #ffffff !important; 
 
-  /* 高度自动跟随图片 */
-  .xiaoxin-item img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    display: block !important;
   }
 
   /*  合照 */
