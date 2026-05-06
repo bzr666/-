@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主页 - 导航入口</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      background: rgba(249, 251, 248, 0.8);
+    }
+
+    /* 欢迎标题样式 */
+    .welcome-title {
+      text-align: center;
+      color: #2c5f2d;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .welcome-desc {
+      text-align: center;
+      color: #6b9080;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* 蜡笔小新全家合照 */
+    .xiaoxin-family {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      border: 4px solid #a4c3b2;
+    }
+
+    /* 小新图片网格布局 */
+    .xiaoxin-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .xiaoxin-item {
+      height: 220px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      border: 3px solid #7fb069;
+      transition: transform 0.3s ease;
+    }
+
+    .xiaoxin-item:hover {
+      transform: scale(1.05);
+    }
+
+    .xiaoxin-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <main class="main-page">
+    <!-- 左侧导航栏 -->
+    <nav class="sidebar">
+      <a href="error.html">返回首页</a>
+      <a href="about.html">关于我</a>
+      <a href="portfolio.html">作品集</a>
+      <a href="contact.html">与我联系</a>
+    </nav>
+
+    <!-- 右侧内容区 - 全新蜡笔小新主题布局 -->
+    <div class="content">
+      <h2 class="welcome-title">🎉 欢迎来到我的主页 🎉</h2>
+      <p class="welcome-desc">点击左侧按钮，探索更多精彩内容~</p>
+
+      <!-- 蜡笔小新全家超大合照 -->
+      <img src="images/1b966192bb9f1e5848c43f379063ada2_720.jpg" alt="蜡笔小新全家合照" class="xiaoxin-family">
+
+      <!-- 小新可爱图片 -->
+      <div class="xiaoxin-grid">
+        <div class="xiaoxin-item">
+          <img src="images/0966c38117169d3b474da4424fc8ec02.jpg" alt="蜡笔小新">
+        </div>
+        <div class="xiaoxin-item">
+          <img src="images/bf7acc0fdc5dc8b46708344228e9eff3.jpg" alt="蜡笔小新">
+        </div>
+        <div class="xiaoxin-item">
+          <img src="images/40c3696faae107925f3a531e89eb861b.jpg" alt="蜡笔小新">
+        </div>
+      </div>
+
+      <!--  超大全家合照 -->
+      <img src="images/addfbc9f301ded83140659284477dd78.jpg" alt="蜡笔小新全家合照" class="xiaoxin-family">
+
+    </div>
+  </main>
+
+  <!-- 返回顶部按钮 -->
+  <a href="#" class="back-to-top">↑</a>
+</body>
+</html>
