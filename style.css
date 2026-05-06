@@ -202,3 +202,40 @@ body {
   color: #6b9080;
   margin-bottom: 8px;
 }
+
+
+@media (min-width: 768px) {
+  .main-page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 100vh;
+  }
+}
+/* 手机端 */
+@media (max-width: 767px) {
+  .main-page {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+  }
+  .sidebar a {
+    width: auto;
+    padding: 10px 14px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  .content {
+    padding: 20px;
+  }
+  .xiaoxin-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xiaoxin-family {
+    height: 400px;
+  }
+}
