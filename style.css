@@ -253,12 +253,13 @@ body {
     border: 3px solid #a5d6a7;
   }
 
-  .xiaoxin-item img {
-    width: 100% !important;
-    height: auto !important; 
-    display: block; 
-    object-fit: contain; 
-  }
+.xiaoxin-item img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;       
+  object-fit: contain !important;
+}
+  
 
 
   /*  合照 */
