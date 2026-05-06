@@ -33,7 +33,7 @@ body {
 /* 欢迎页样式 */
 .cover-page {
   min-height: 100vh;
-  background: url('./images/bg.jpg') no-repeat center center;
+  background: url('无图片') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
