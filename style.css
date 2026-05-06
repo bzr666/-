@@ -205,14 +205,14 @@ body {
 
 
 @media (max-width: 767px) {
-  /* 1. 整体布局改为上下 */
+  /* 整体布局改为上下 */
   .main-page {
     display: flex !important;
     flex-direction: column !important;
     min-height: auto !important;
   }
 
-  /* 2. 导航移到顶部，横向自动换行 */
+  /* 导航移到顶部，横向自动换行 */
   .sidebar {
     display: flex !important;
     flex-direction: row !important;
@@ -229,19 +229,31 @@ body {
     margin: 0 !important;
   }
 
-  /* 内容区边距适配手机 */
+  /* 内容适配手机 */
   .content {
     padding: 15px !important;
     min-height: auto !important;
   }
 
-  
   .xiaoxin-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
   }
 
-  
+  /* 小图高度自动适配 */
+  .xiaoxin-item {
+    height: auto !important;
+  }
+
+  /*  小图完整显示*/
+  .xiaoxin-item img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    background-color: #ffffff !important;
+  }
+
+  /* 完整显示 */
   .xiaoxin-family {
     width: 100% !important;
     height: auto !important;
@@ -254,11 +266,4 @@ body {
     margin-top: 20px !important;
   }
 
-  /* 完整显示 */
-  .xiaoxin-item img {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    background-color: #ffffff !important;
-  }
 }
