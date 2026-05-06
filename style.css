@@ -205,14 +205,13 @@ body {
 
 
 @media (max-width: 767px) {
-  /*  整体布局改为上下 */
+  /* 页面整体改为上下布局 */
   .main-page {
     display: flex !important;
     flex-direction: column !important;
-    min-height: auto !important;
   }
 
-  /* 导航移到顶部，横向自动换行 */
+  /* 导航置顶，横向排列 */
   .sidebar {
     display: flex !important;
     flex-direction: row !important;
@@ -226,46 +225,43 @@ body {
     width: auto !important;
     font-size: 14px !important;
     padding: 10px 12px !important;
-    margin: 0 !important;
   }
 
-  /*内容区边距适配手机 */
+  /*内容区适配手机边距 */
   .content {
     padding: 15px !important;
-    min-height: auto !important;
   }
 
-  /* 小图网格改成2列*/
+  /* 小图改成2列 */
   .xiaoxin-grid {
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
   }
 
-  /* 图片上下居中 */
   .xiaoxin-item {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 220px !important; /* 保持原高度不变 */
+    height: auto !important; /* 强制解除固定高度 */
+    border-radius: 12px !important;
+    border: 3px solid #7fb069 !important;
+    overflow: hidden !important;
+    display: block !important;
   }
 
+  /* 高度自动跟随图片 */
   .xiaoxin-item img {
     width: 100% !important;
     height: auto !important;
     object-fit: contain !important;
-    background-color: #ffffff !important;
+    display: block !important;
   }
 
-  /* 完整显示 */
+  /*  合照 */
   .xiaoxin-family {
     width: 100% !important;
     height: auto !important;
-    max-height: none !important;
     object-fit: contain !important;
-    background-color: #ffffff !important;
     border-radius: 16px !important;
     border: 4px solid #a4c3b2 !important;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15) !important;
     margin-top: 20px !important;
   }
 
