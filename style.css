@@ -213,29 +213,45 @@ body {
 }
 /* 手机端 */
 @media (max-width: 767px) {
+
   .main-page {
     display: flex;
     flex-direction: column;
   }
+
+  /* 导航移到顶部 */
   .sidebar {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px;
     justify-content: center;
+    gap: 12px;
+    padding: 15px 10px;
   }
+
+  /* 手机导航按钮缩小适配 */
   .sidebar a {
     width: auto;
-    padding: 10px 14px;
-    font-size: 16px;
-    margin: 5px;
+    padding: 10px 16px;
+    font-size: 15px;
   }
+
+  /* 内容区缩小内边距 */
   .content {
-    padding: 20px;
+    padding: 15px;
   }
+
+  /* 三张小图手机改成两列 */
   .xiaoxin-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+   /* 大合照*/
   .xiaoxin-family {
+    object-fit: contain;
     height: 400px;
+  }
+
+  .xiaoxin-item img {
+    object-fit: contain;
   }
 }
