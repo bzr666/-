@@ -204,83 +204,44 @@ body {
 }
 
 
-@media (min-width: 768px) {
-  .main-page {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    min-height: 100vh;
-  }
-}
-/* 手机端 */
 @media (max-width: 767px) {
-
+  /* 手机布局改成上下 */
   .main-page {
     display: flex;
     flex-direction: column;
   }
 
-  /* 导航移到顶部 */
+  /* 导航置顶横向排列 */
   .sidebar {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
-    padding: 15px 10px;
+    padding: 15px;
+    gap: 10px;
   }
 
-  /* 手机导航按钮缩小适配 */
   .sidebar a {
     width: auto;
-    padding: 10px 16px;
-    font-size: 15px;
+    font-size: 14px;
+    padding: 10px 12px;
   }
 
-  /* 内容区缩小内边距 */
   .content {
     padding: 15px;
   }
 
-  /* 三张小图手机改成两列 */
+  /* 小图网格手机自适应 */
   .xiaoxin-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-   /* 大合照*/
   .xiaoxin-family {
     object-fit: contain;
     height: 400px;
   }
 
+  /* 手机所有小图：不裁剪 */
   .xiaoxin-item img {
     object-fit: contain;
   }
- 
-@media (max-width: 767px) {
-  body {
-    transform: rotate(90deg);
-    transform-origin: center center;
-    width: 100vh;
-    height: 100vw;
-    overflow: hidden;
-  }
-
-  .main-page {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    min-height: 100vh;
-  }
-
-  .xiaoxin-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .xiaoxin-family {
-    height: 800px;
-    object-fit: cover;
-  }
-
-  .xiaoxin-item img {
-    object-fit: cover;
-  }
-}
 }
