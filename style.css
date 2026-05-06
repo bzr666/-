@@ -205,7 +205,7 @@ body {
 
 
 @media (max-width: 767px) {
-  /* 整体布局改为上下 */
+  /*  整体布局改为上下 */
   .main-page {
     display: flex !important;
     flex-direction: column !important;
@@ -229,23 +229,26 @@ body {
     margin: 0 !important;
   }
 
-  /* 内容适配手机 */
+  /*内容区边距适配手机 */
   .content {
     padding: 15px !important;
     min-height: auto !important;
   }
 
+  /* 小图网格改成2列*/
   .xiaoxin-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
   }
 
-  /* 小图高度自动适配 */
+  /* 图片上下居中 */
   .xiaoxin-item {
-    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 220px !important; /* 保持原高度不变 */
   }
 
-  /*  小图完整显示*/
   .xiaoxin-item img {
     width: 100% !important;
     height: auto !important;
